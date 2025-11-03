@@ -1,0 +1,14 @@
+name: Demo2 Workflow
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  testdemo2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: ls
